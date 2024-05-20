@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript CRUD App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h2>Thêm / xóa / sửa sinh viên</h2>
+        <hr />
+
+      <form id="student-form">
+        <label for="student-code">Mã sinh viên:</label>
+        <input type="text" id="student-code" placeholder="Nhập MSSV" required />
+
+        <label for="student-name">Họ tên:</label>
+        <input
+          type="text"
+          id="student-name"
+          placeholder="Nhập Họ tên"
+          required
+        />
+
+        <label for="student-dob">Ngày sinh:</label>
+        <input
+          type="date"
+          id="student-dob"
+          placeholder="Nhập ngày sinh"
+          required
+        />
+
+        <label for="student-email">Email:</label>
+        <input
+          type="email"
+          id="student-email"
+          placeholder="Nhập Email"
+          required
+        />
+
+        <label for="student-score">Điểm:</label>
+        <input
+          type="number"
+          id="student-score"
+          placeholder="Nhập Điểm"
+          required
+          min="0"
+          max="10"
+        />
+
+        <button type="submit">Lưu</button>
+      </form>
+
+      <hr />
+      <h2>Danh sách sinh viên</h2>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Mã sinh viên</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Email</th>
+            <th>Điểm</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tbodyList"></tbody>
+      </table>
+      <hr />
+    </div>
+    <script src="app.js" defer></script>
+  </body>
+</html>

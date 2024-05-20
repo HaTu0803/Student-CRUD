@@ -1,0 +1,167 @@
+body {
+  font-family: monospace;
+  background-color: #f8c4b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  margin: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 18px;
+}
+form input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-color: #FFD0D0;
+    transition: 0.3s;
+    outline: none;
+}
+form input:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-color: #FFB9B9;
+    transition: 0.3s;
+
+}
+form button {
+  background: #FFD0D0;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #FFB9B9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+th,
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid #FFD0D0;
+}
+
+th {
+  
+  background-color: #FFD0D0;
+}
+
+tr:nth-child(even) {
+  background-color: #FFEFEF;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 5px 10px;
+  background-color: #efca8c;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions button.delete {
+  background-color: #7ecfc0;
+}
+
+.actions button.delete:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    background-color: #AAE3E2;
+}
+.actions button.edit:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    background-color: #F6E6C2;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  form {
+    gap: 5px;
+  }
+
+  form input,
+  form button {
+    padding: 8px;
+  }
+
+  /* table th,
+  table td {
+    padding: 8px;
+  } */
+
+  .actions button {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  form input,
+  form button {
+    padding: 6px;
+  }
+
+  /* table th,
+  table td {
+    padding: 6px;
+  } */
+
+  .actions {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .actions button {
+    width: 100%;
+    padding: 6px;
+  }
+}
