@@ -11,11 +11,12 @@ body {
 .container {
   background: #fff;
   padding: 20px;
-  margin: 40px;
+  margin: 20px; 
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 600px;
+  
 }
 
 h2 {
@@ -28,12 +29,16 @@ form {
   flex-direction: column;
   gap: 10px;
 }
-
+form label {
+  font-weight: bold;
+}
 form input,
 form button {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 18px;
+  font-size: 12px;
+
 }
 form input:focus {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -53,6 +58,7 @@ form button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 form button:hover {
